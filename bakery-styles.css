@@ -1,0 +1,208 @@
+
+
+body {
+    font-family: Georgia, serif;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* IMAGE STYLES
+----------------------------*/
+.image {
+    float: right;
+    margin: 0px 0px 30px 30px;
+    transition: all .5s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* HEADINGS
+----------------------------*/
+h1 {
+    font-family: 'Stint Ultra Expanded', Geprgia, serif;
+    font-size: 300%;
+}
+
+h2 {
+    font-family: 'Stint Ultra Expanded', Geprgia, serif;
+    margin-bottom: .5em;
+    font-size: 150%;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #7A0002;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    padding-left: 1em;
+    margin-top: 2.5em;
+    font-size: 120%;
+    clear: both;
+}
+
+
+
+/* HEADER
+----------------------------*/
+header {
+    color: white;
+    background: url(images/bkg_header.jpg);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 10px 0 0 0;
+    height: 175px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: .25em
+}
+
+
+
+/* NAV BAR
+----------------------------*/
+nav {
+    font-family: verdana, sans-serif;
+    background-color: #783F27;
+    border: 4px solid #783F27;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+nav ul {
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+nav li {
+    padding: 1rem;
+    list-style-type: none;
+    }
+
+nav a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+    }
+
+nav a:hover {
+    background-color: #EADDC4;
+    color: #783F27;
+    border-radius: 1rem;
+    }
+    
+
+
+
+
+/* MAIN & PRODUCTS
+----------------------------*/
+main {
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    background-color: white;
+    line-height: 1.8em;
+    font-size: 125%;
+    color: #555;
+    padding: 1em;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    margin: 10em 2em 0 2em;
+    position: relative;
+}
+
+p.more {
+    font-family: verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+p.more a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
+}
+
+.award {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}
+
+
+
+/* ASIDE "HOURS"
+----------------------------*/
+aside.hours {
+    padding: 1em;
+    padding-left: 45px;
+    font-size: 120%;
+    background: linear-gradient(white 90%, #EADDC4);
+    margin: 2em;
+    border: 2px solid #783F27;
+    border-radius: 20px;
+}
+
+span.day {
+    color: #783F27;
+    font-family: verdana, sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* FOOTER
+----------------------------*/
+footer {
+    color: #EADDC4;
+    text-align: center;
+    font-size: .8em;
+    padding: 1em;
+    font-family: verdana, sans-serif;
+    background-color: #783F27;
+}
+
+
+
+/* LINKS
+----------------------------*/
+a:link,
+a:visited {
+    color: #DC6903;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: #F9AB33;
+}
+
+a[href^="http"]::after {
+    content: url(images/icon_external.png)
+}
+
+a[href$="pdf"]::before {
+    content: url(images/icon_pdf.gif);
+}
